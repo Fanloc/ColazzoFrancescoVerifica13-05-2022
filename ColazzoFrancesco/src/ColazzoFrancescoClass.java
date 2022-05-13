@@ -19,9 +19,17 @@ public class ColazzoFrancescoClass {
 	 * @return somma
 	 */
 	public int colazzoMet(int f) {
-		int r = 1;
-		for(int i=f;i<0;i++) {
-			r = r*i;
+		//r deve essere inizializzato a 0 non a 1
+		int r = 0;
+		/*i può anche partire dal valore di f e andare fino a 0 ma
+		 * per fare ciò la condizione deve essere che i sia maggiore
+		 * di 0 non minore, inoltre bisogna decrementare il valore di i
+		 * non aumentarlo, poi ovviamente essendo una somma l'operatore deve
+		 * essere + e non *
+		 * 
+		 */
+		for(int i=f;i>0;i--) {
+			r = r+i;
 		}
 		return r;
 	}
